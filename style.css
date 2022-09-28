@@ -1,0 +1,158 @@
+/* Font: Overpass - 400; 700 */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap'); 
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rateState, .thankYouState {
+    background-color: var(--DarkBlue);
+    padding: 1.5rem;
+    margin: 1rem;
+    max-width: 375px;
+
+    border-radius: 15px;
+}
+
+.iconStar {
+    background-color: hsl(213, 19%, 24%);
+    padding: 10px;
+
+    border-radius: 50%;
+}
+
+.rateTitle {
+    color: var(--White);
+    margin: .5rem 0;
+}
+
+.rateTxtDescription {
+    color: var(--LightGrey);
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.rateUl {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    list-style: none;
+}
+
+.rateNumbers {
+    background-color: hsl(213, 19%, 24%);
+    color: var(--LightGrey);
+    width: 2.6rem;
+    padding: 12px;
+    margin: .8rem 0%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    transition: all .15s;
+}
+
+.rateNumbers:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.rateNumbers:focus {
+    background-color: var(--MediumGrey);
+    color: var(--White);
+}
+
+.rateSubmit {
+    background-color: var(--Orange);
+    color: var(--White);
+    width: 100%;
+    padding: 16px 0;
+    margin: .6rem 0%;
+
+    border-radius: 22px;
+    border: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    transition: all .2s;
+}
+
+.rateSubmit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* THANK YOU STATE */
+
+.thankYouState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.thankYouImg {
+    margin: .4rem;
+}
+
+.thanksTxtRate {
+    background-color: hsl(213, 19%, 24%);
+    color: var(--Orange);
+    padding: .6rem .8rem;
+    margin: 1rem;
+    font-size: 15px;
+
+    border-radius: 22px;
+}
+
+.thanksTitle {
+    color: var(--White);
+    margin: .4rem;
+}
+
+.thanksTxtDescription {
+    color: var(--White);
+    font-size: 15px;
+    margin: 1rem 0%;
+
+    text-align: center;
+}
+
+
+
+
+
+.attribution {color: white; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
